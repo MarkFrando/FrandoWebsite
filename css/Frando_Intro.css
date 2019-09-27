@@ -1,0 +1,24 @@
+#frando{
+	font-size: 150%;
+	background-color: rgb(200,50,50);
+	color: white;
+}
+
+#enter{
+	background-color: rgb(127,127,127);
+}
+
+#enter a{
+	color: white;
+	text-decoration: none;
+}
+
+main{
+	color: white;
+	font-size: 50px;
+	font-family: arial;
+	background-color: rgb(30,30,30);
+	padding-top: 150px;
+	padding-bottom: 350px;
+	text-align: center;
+}

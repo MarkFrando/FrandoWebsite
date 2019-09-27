@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html  lang="en">
+	<head>
+		<title> Frando | Merch </title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type= "text/css" href="css/Frando_BrowseMerch.css">
+		<script type="text/javascript" src="js/Frando_Merch.js"></script>
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" href="css/Bootstrap.css">
+	</head>
+
+	<body>
+		<header>
+			<!-- Title and navbar for the web page -->
+			<nav class="menu fixed-top">
+				<div class="container-fluid">
+					<p id="title"><a href="Frando.html">Frando</a></p>
+					<p id="links"><a href="Frando.html">Home</a>|
+					<a href="Frando_Shop.html">Shop</a>|
+					<a href="Frando_About.html">About</a>|
+					<a href="Frando_Contact.html">Contact</a></p>
+					<div class="iconHeader rounded-bottom">
+						<div class="fa fa-facebook"></div>
+						<div class="fa fa-twitter"></div>
+						<div class="fa fa-google-plus"></div>
+					</div>
+				</div>
+			</nav>	
+		</header>
+
+		<main>
+
+		<div class="container-fluid">
+			<!-- Dedicated page for our merchandise for sale -->
+			<h1>Our Mechandise</h1>
+				<section>
+					<h2>Create Your Own Chrismas Greeting Card!</h2>
+				</section>
+
+				<br>
+
+				<!-- Options and input for card selections -->
+				<section>
+					<div class="row">
+						<section class="box col-sm-3">
+							<label for="chris1">Browse Card 1:</label>
+							<input type="radio" id="chris1" name="chrisCard" value="img/Christmas1.jpg">
+						</section>
+
+						<section class="box offset-1 col-sm-3">
+							<label for="chris2">Browse Card 2:</label>
+							<input type="radio" id="chris2" name="chrisCard" value="img/Christmas2.jpg">
+						</section>
+
+						<section class="box offset-1 col-sm-3">
+							<Label for="chrisCard">Browse Card 3:</Label>
+							<input type="radio" id="chris3" name="chrisCard" value="img/Christmas3.jpg">
+						</section>
+					</div>
+
+					<br>
+
+					<!-- Card selection confirmation -->
+					<div class="row">
+						<section class="offset-4 col-4">
+							<input id="create" type="button" value="Create Greeting Card" onclick="card()">
+						</section>
+					</div>
+				</section>
+
+				<!-- Card size -->
+				<section style="width:1135px; height:600px; border-radius: 50px" id="secCard">
+					<p id="name"></p>
+					<p id="value"></p>
+				</section>
+		</div><!-- Container -->
+
+		</main>
+
+		<footer>
+			<div class="iconFooter">
+				<div class="fa fa-facebook"></div>
+				&nbsp&nbsp&nbsp&nbsp
+				<div class="fa fa-twitter"></div>
+				&nbsp&nbsp&nbsp&nbsp
+				<div class="fa fa-google-plus"></div>
+			</div>
+			<br>
+			Frando&copy; copyright
+		</footer>
+	</body>
+</html>

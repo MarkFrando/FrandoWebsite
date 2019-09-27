@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html  lang="en">
+	<head>
+		<title> Frando | Contact </title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/Frando_Contact.css">
+		<script type="text/javascript" src="js/Frando_Contact.js"></script>
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" href="css/Bootstrap.css">
+	</head>
+
+	<body>
+		<header>
+			<!-- Title and navbar for the web page -->
+			<nav class="menu fixed-top">
+				<div class="container-fluid">
+					<p id="title"><a href="Frando.html">Frando</a></p>
+					<p id="links"><a href="Frando.html">Home</a>|
+					<a href="Frando_Shop.html">Shop</a>|
+					<a href="Frando_About.html">About</a>|
+					<a href="Frando_Contact.html">Contact</a></p>
+					<div class="iconHeader rounded-bottom">
+						<div class="fa fa-facebook"></div>
+						<div class="fa fa-twitter"></div>
+						<div class="fa fa-google-plus"></div>
+					</div>
+				</div>
+			</nav>	
+		</header>
+
+		<main>
+
+		<div class="container-fluid">
+			<!-- Contact form in case of customer feedback for satisfaction -->
+			<section1>
+			<form mehtod="post" action="Frando_ContactConfirm.html" onsubmit="return validateForm()">
+				<h1>Contact Us!</h1>
+
+				<!-- Name input -->
+				<label for="fullName">Full Name:</label><br>
+				<div class="row">
+					<section class="col-md-6">
+						<input type="text" id="firstName" name="fullName" placeholder="First Name">
+					</section>
+
+					<section class="col-md-6">
+						<input type="text" id="lastName" name="fullName" placeholder="Last Name"><br>
+					</section>
+				</div>
+
+				<br>
+
+				<!-- Email input -->
+				<label for="email">Email:</label><br>
+				<input type="email" id="email" placeholder="abc@def.com"><br>
+
+				<br>
+
+				<!-- Phone number input -->
+				<label for="phone">Phone Number:</label><br>
+				<input type="phone" id="phone" placeholder="(123)-456-7890"><br>
+
+				<br>
+
+				<!-- Message or comment input -->
+				<label for="message">Message / Comments:</label><br>
+					<textarea id="message" cols="70" rows="7" placeholder="Enter your message/comment here"></textarea><br>
+				</div>
+
+				<br>
+
+				<div class="row">
+					<!-- Gender Input -->
+					<section class="col-md-6">
+						<label for="male">Male</label>
+						<input type="radio" id="male" value="male" name="subType">
+						<label for="female">Female</label>
+						<input type="radio" id="female" value="female" name="subType">
+						<label for="other">Other</label>
+						<input type="radio" id="Other" value="Other" name="subType"><br><br>
+					</section>
+
+					<!-- Subscription input -->
+					<section class="col-md-6">
+						<label>Subscribe to Frando</label>
+						<input type="checkbox" id="subFrando" name="chkBox" checked="checked"><br>
+					</section>
+				</div>
+
+				<br>
+
+				<!-- County input -->
+				<label>Country: </label>
+				<select>
+					<option id="cntry1" value="Canada">Canada</option>
+					<option id="cntry2" value="USA">USA</option>
+					<option id="cntry3" value="Canada">China</option>
+					<option id="cntry4" value="USA">Russia</option>
+					<option id="cntry5" value="Canada">Brazil</option>
+					<option id="cntry6" value="USA">South Africa</option>
+				</select><br>
+
+				<br>
+				<div class="row">
+					<!-- Submit or reset form -->
+					<section class="offset-9 col-3">
+						<input id="submit" type="submit" value="submit">
+						<input id="reset" type="reset" value="reset">
+					</section>
+				</div>
+			</form>
+			</section1>
+		</div><!-- Container -->
+
+		</main>
+
+		<footer>
+			<div class="iconFooter">
+				<div class="fa fa-facebook"></div>
+				&nbsp&nbsp&nbsp&nbsp
+				<div class="fa fa-twitter"></div>
+				&nbsp&nbsp&nbsp&nbsp
+				<div class="fa fa-google-plus"></div>
+			</div>
+			<br>
+			Frando&copy; copyright
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html  lang="en">
+	<head>
+		<title> Frando | Home </title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type= "text/css" href="css/Frando.css">
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" href="css/Bootstrap.css">
+	</head>
+
+	<body>
+		<header>
+			<!-- Title and navbar for the web page -->
+			<nav class="menu fixed-top">
+				<div class="container-fluid">
+					<p id="title"><a href="Frando.html">Frando</a></p>
+					<p id="links"><a href="Frando.html">Home</a>|
+					<a href="Frando_Shop.html">Shop</a>|
+					<a href="Frando_About.html">About</a>|
+					<a href="Frando_Contact.html">Contact</a></p>
+					<div class="iconHeader rounded-bottom">
+						<div class="fa fa-facebook"></div>
+						<div class="fa fa-twitter"></div>
+						<div class="fa fa-google-plus"></div>
+					</div>
+				</div>
+			</nav>	
+		</header>
+
+		<!-- Comforting picture -->
+		<img id="slideshow" src="img/Slideshow.jpg">
+
+		<main>
+
+		<div class="container-fluid">
+			<!-- Welcome information and introduction -->
+			<section1>
+			<h1 id="welcome">Welcome!</h1>
+				<div>
+					<p id="welcomeP"> Welcome! Frando reviews and displays the latest trending items from inovative technology all the way to stylish fashion. We priortize our userbase's variety in taste by providing a range of highquality items for each respective category. We aim to show potential items of interest and give users exclusive notice on where and when to obtain the item. </p>
+				</div>
+			</section1>
+
+			<!-- Slideshow of various products on the website -->
+			<section2>
+				<h2>Latest Trends:</h2>
+				<div class="row">
+					<section class="col-lg-5">
+						<div class="row" id="NBA">
+				            <div class="container bg-info col-sm-1;">
+			                    <img class="slideshow" src="img/Phone.jpg">
+			                    <img class="slideshow" src="img/shoe.jpg">
+			                    <img class="slideshow" src="img/Shirt.jpg">
+			                    <img class="slideshow" src="img/Hololens.jpg">
+				            </div>
+
+				            <script>
+			                var myIndex = 0;
+			                carousel();
+
+			                function carousel() {
+			                    var i;
+			                    var x = document.getElementsByClassName("slideshow");
+			                    for (i = 0; i < x.length; i++) {
+			                       x[i].style.display = "none";
+			                    }
+
+			                    myIndex++;
+			                    if (myIndex > x.length) {myIndex = 1}
+				                    x[myIndex-1].style.display = "block";
+				                    setTimeout(carousel, 4000);
+				                }
+				            </script>
+				        </div>
+					</section>
+
+					<!-- Quick access to information posted on the side in series -->
+					<section class="col-lg-7">
+						<section>
+							<p class="newsP"><b>The new Frando 7's</b><br>
+								Frando has the latest and up to date info on all things Jordan, and of course the Jordan 7s</p><br>
+						</section>
+
+						<section>
+							<p class="newsP"><b>Frando T-shirts</b><br>
+								Limited eddition Frando merchandise will be given at a later date</p><br>
+						</section>
+
+						<section>
+							<p class="newsP"><b>Everybody's saying "Frando"</b>
+								Frando has the latest and up to date info on all things Jordan, and of course the Jordan 7s</p><br>
+						</section>
+					</section>
+			</section2>
+
+			<!-- Touch up on useful information about the creators of the web site -->
+			<section3>
+				<div class="row">
+					<section class="col-md-8">
+						<h2 id="about">About Us!</h2>
+						<p id="aboutP"> On our website we care about our customers, so we would like to introduce ourselves. Frando was created by three members Mark, Ali, and Dylan all young coders currently studying at Humber College in pursuit of their Computer Programming diploma. This originally started off as a school project but took off! Now we strive to provide only premium and interesting content!</p>
+					</section>
+
+					<section class="col-md-4">
+						<div id="aboutNote">
+							<p id="note"><b>We have the latest trends in:</b></p>							
+								<ol>
+									<li>Fashion</li>
+									<li>Technology</li>
+									<li>Society</li>
+								</ol>
+						</div>
+					</section>
+				</div>
+
+			<!-- Quote from one of the reviewers -->
+			<p id="quote"> <i>"This site is hella awesome!"</i>
+			<div class="blockquote-footer">
+				Everyone
+			</div>
+			</section3>
+
+			<!-- A quick navigation to the shops available -->
+			<section4>
+				<h2 id="purchase">Purchase Online Now!</h2>
+				<div class="row">
+					<section class="col-sm-4">
+						<div class="buy">
+							<h3 class="box"><a href="Frando_BrowseTech.html">Browse Technology</a></h3>
+								<p class="boxTxt">Quick access to our Technology page</p>
+						</div>
+					</section>
+
+					<section class="col-sm-4">
+						<div class="buy">
+							<h3 class="box"><a href="Frando_BrowseClothing.html">Browse Fashion</a></h3>
+								<p class="boxTxt">Quick access to our Fashion page</p>
+						</div>
+					</section>
+
+					<section class="col-sm-4">
+						<div class="buy">
+							<h3 class="box"><a href="Frando_BrowseMerch.html">Browse Merchandise</a></h3>
+								<p class="boxTxt">Quick access to our Merchandise page</p>
+						</div>
+					</section>
+				</div>
+			</section4>
+		</div><!-- Container -->
+
+		</main>
+
+		<footer>
+			<div class="iconFooter">
+				<div class="fa fa-facebook"></div>
+				&nbsp&nbsp&nbsp&nbsp
+				<div class="fa fa-twitter"></div>
+				&nbsp&nbsp&nbsp&nbsp
+				<div class="fa fa-google-plus"></div>
+			</div>
+			<br>
+			Frando&copy; copyright
+		</footer>
+	</body>
+</html>
